@@ -18,11 +18,13 @@ function App() {
   // }
   const [page, setPage] = useState("home");
   return (
-    <div className="w-[800px] h-[650px]">
+    <div className="w-[800px] h-full">
       <Topbar setPage={setPage} page={page} />
-      {page === "home" && <Home />}
-      {page === "shop" && <Shop />}
-      {page === "account" && <Account />}
+      <div className="h-full">
+        {page === "home" && <Home />}
+        {page === "shop" && <Shop />}
+        {page === "account" && <Account />}
+      </div>
     </div>
   );
 }
