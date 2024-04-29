@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Cookie Code",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["cookies", "scripting"],
+  "host_permissions": ["http://*/*", "https://*/*"]
+}
